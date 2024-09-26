@@ -1,0 +1,102 @@
+.hero {
+    height: 100vh;
+    overflow: hidden;
+    // background-image: url("../../public/.png");//added next 4 lines
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center center;
+    // background: linear-gradient(180deg, #46479C, #111132);
+    background: linear-gradient(180deg, #46479C, #151F2B);
+    position: relative;
+
+    .wrapper {
+      max-width: 1366px;
+      height: 100%;
+      margin: auto;
+    
+  
+    .textContainer {
+      //padding-left: 80px; //need to do smth with this seems not right
+      width: 50%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 40px;
+  
+      h2 {
+        font-size: 30px;
+        color: rgb(198, 192, 192);
+        letter-spacing: 10px;
+      }
+  
+      h1 {
+        font-family: 'MuseoModerno', system-ui;
+        font-size: 96px;
+        z-index: 1;
+       
+          .blinking {
+            animation: blink-animation 1s steps(5, start) infinite;
+        
+          }
+        
+         @keyframes blink-animation {
+            to {
+             visibility: hidden;
+           }
+        }
+          span{
+            background-image: linear-gradient(to right, #7be728, #f3265f, #7f40ac, #7be728);
+            animation: gradientAnimation 5s linear infinite;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+          }
+      }
+  
+      .buttons {
+        button {
+          padding: 20px;
+          font-size: 20px;
+          background-color: transparent;
+          color: white;
+          border: 1px solid white;
+          border-radius: 10px;
+          margin-right: 20px;
+          cursor: pointer;
+          
+        }
+        z-index: 1;
+      }
+  
+        img {
+            width: 50px;
+        }
+      }
+    }
+
+    .imgContainer {
+      img{
+        width: 51%;     //40 for robot
+        position: absolute;
+        // left: 0;
+        bottom: 50px;
+    
+        // transform: scaleX(-1.1);//for smoke
+      }
+      // height: 100%;
+      // width: 100%;
+     
+    }
+  
+    .slidingTextContainer {
+      font-size: 40vh;
+      position: absolute;
+      white-space: nowrap;
+      color: rgba(115, 110, 110, 0.255);
+      bottom: 0px;
+      width: 50%;
+      font-weight: bold;
+      padding: 0 0 0 90px;
+    }
+  }
+  

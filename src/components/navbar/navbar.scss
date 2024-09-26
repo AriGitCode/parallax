@@ -1,0 +1,38 @@
+
+.navbar{
+    height: 100px;
+    background-color:linear-gradient(190deg,  #151F2B);
+
+
+    .wrapper{
+        max-width: 1366px;
+        margin: auto;
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        height: 100%;
+        
+
+            p{
+            font-size:20px;
+            color: rgb(211, 214, 218);
+            margin-left: 90px;
+        
+                span{
+               font-weight: bold;
+               color: orangered;
+              }
+            }
+
+        .social{
+            display: flex;
+            gap: 20px;
+
+            img{
+                width: 18px;
+                height: 18px;
+            }  
+              
+        }
+    }
+}
