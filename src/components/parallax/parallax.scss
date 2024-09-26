@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .parallax{
     width:100%;
     height: 100%;
@@ -8,9 +10,15 @@
     overflow: hidden;
 
 
+
     h1{
         font-size: 96px;
         z-index: 1;
+
+        @include mobile{
+            font-size: 40px;
+            text-align: center;
+        }
     }
 
     .sky{
@@ -21,6 +29,7 @@
         width: 100%;
         height: 100%;
         z-index: 3;
+
     }
 
     // .foret{
@@ -62,6 +71,7 @@
         width: 100%;
         height: 100%;
         z-index: 4;
+
     }
 
     // .earth{
