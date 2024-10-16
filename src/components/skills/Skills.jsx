@@ -5,6 +5,8 @@ import { FaReact } from "react-icons/fa6";
 import { FaDatabase } from "react-icons/fa";
 import { VscServerProcess } from "react-icons/vsc";
 import { SiDeepnote } from "react-icons/si";
+// import { useInView } from 'react-intersection-observer';
+import { useRef } from 'react';
 
 const variants = {
   initial: {
@@ -24,8 +26,15 @@ const variants = {
 };
 
 const Skills = () => {
+  const {ref} = useRef();
+
+  // const isInView = useInView(ref, { margin: '-100px' });
   return (
-    <motion.div className='skills' variants={variants} initial='initial' animate='animate'>
+    <motion.div className='skills' 
+    variants={variants} 
+    initial='initial'
+    animate={'animate' }
+    ref={ref}>
       <motion.div className='textContainer'>
         <p>HELLO! I am a Frontend Developer with a passion to 
         <br/>CREATE DIGITAL PRODUCTS.</p>
@@ -43,7 +52,7 @@ const Skills = () => {
         </div>
       </motion.div>
 
-      <motion.div className='skillContainer' variants={variants}>
+    <motion.div className='skillContainer' variants={variants}>
         <motion.div className='box' whileHover={{ color: 'white'}}>
           <h2><IoDesktopOutline /> Frontend</h2>
           <p>JavaScript</p>
@@ -81,7 +90,7 @@ const Skills = () => {
           <p>Photoshop</p>
           
         </motion.div>
-      </motion.div>
+      </motion.div> 
 
     </motion.div>
   );

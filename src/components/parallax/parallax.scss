@@ -9,11 +9,12 @@
     align-items: center;
     overflow: hidden;
 
-
-
     h1{
         font-size: 96px;
+        margin-top: 100px;
         z-index: 1;
+
+
 
         @include mobile{
             font-size: 40px;
@@ -29,58 +30,26 @@
         width: 100%;
         height: 100%;
         z-index: 3;
-
     }
-
-    // .foret{
-    //     position: relative;
-    //     background-image: url('./mountains.png');
-    //     background-size: cover;
-    //     background-position: bottom;
-    //     width: 3%;
-    //     height: 5%;
-    //     z-index: 3;
-    // }
     
-    // .tree{
-    //     position: absolute;
-    //     background-image: url('./stars.jpeg');
-    //     background-size: cover;
-    //     background-position: bottom;
-    //     width: 100%;
-    //     height: 100%;
-    //     z-index: 4;
-    // }
-
-    .stars{
+    .planets{
         position: absolute;
-        background-image: url('./stars.');
-        background-size: cover;
-        background-position: bottom;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
-
-    .cloud{
-        position: absolute;
-        background-image: url('./cloud.png');
-        // background-position: right 15% bottom 50%;
+        background-image: url('./planets.jpeg');
         background-size: cover;
         background-position: bottom;
         width: 100%;
         height: 100%;
         z-index: 4;
-
     }
 
-    // .earth{
-    //     position: absolute;
-    //     background-image: url('./pngwing.png');
-    //     background-position: right 35% bottom 70%;
-    //     background-size: cover;
-    //     width: 100%;
-    //     height: 100%;
+    .cloud{
+        position: absolute;
+        background-image: url('./cloud.png');
+        background-size: cover;
+        width: 60%;
+        height: 60%;
+        z-index: 4;
 
-    // }
+    }
 }
+

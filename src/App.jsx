@@ -43,12 +43,12 @@ const App = () => {
         <section id='Homepage'>
           <Hero/>
         </section>
-        {/* <section>
+        <section>
           <Skills/>
         </section>
           <Portfolio/>
-        <section id='Contact'><Contact/></section> */}
-        {/* <section id='Portfolio'><Parallax type='portfolio'/></section> */}
+        <section id='Contact'><Contact/></section> 
+        
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}

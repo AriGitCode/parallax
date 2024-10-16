@@ -53,7 +53,7 @@ const Hero =() => {
                 <motion.button variants={textVariants}>My Works</motion.button>
                 <motion.button variants={textVariants}>Resume</motion.button>
               </motion.div>
-              <motion.img variants={textVariants} animate='scrollButton' src='/scroll.png' alt='scroll' />
+              {/* <motion.img variants={textVariants} animate='scrollButton' src='/scroll.png' alt='scroll' /> */}
             </motion.div>  
           </div>
           <motion.div className='slidingTextContainer' variants={sliderVariants} initial='initial' animate='animate'>
